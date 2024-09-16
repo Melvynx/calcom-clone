@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="src/index.css" />
+  </head>
+  <body class="bg-background min-h-full text-foreground">
+    <div class="md:flex hidden fixed top-4 items-center gap-4 right-4">
+      <button class="px-4 py-1.5 bg-white text-black rounded-md">
+        Need help?
+      </button>
+      <div class="border flex rounded-md border-stone-700 p-1 bg-background">
+        <button class="px-3 py-1.5 h-full text-sm">
+          <i data-lucide="calendar" class="size-4 text-stone-300"></i>
+        </button>
+        <button
+          class="px-3 py-1.5 h-full text-sm bg-accent text-foreground rounded-md"
+        >
+          <i data-lucide="grid-3x3" class="size-4 text-stone-300"></i>
+        </button>
+        <button class="px-3 py-1.5 h-full text-sm text-foreground rounded-md">
+          <i data-lucide="columns-3" class="size-4 text-stone-300"></i>
+        </button>
+      </div>
+    </div>
+    <main
+      class="h-screen flex-col w-full flex md:items-center md:justify-center bg-background"
+    >
+      <div
+        class="bg-card mx-auto w-full text-white flex flex-col md:flex-row md:rounded-lg md:border md:border-accent md:h-[520px] md:max-w-[960px] xl:max-w-[1056px] md:w-fit"
+      >
+        <!-- Header -->
+        <header class="bg-card p-6 flex flex-col gap-2 md:basis-60 xl:basis-72">
+          <img
+            src="https://melvynx.com/images/my-face.png"
+            alt="my face"
+            class="size-6 rounded-full"
+          />
+          <p class="text-muted-foreground text-sm">Melvyn Malherbe</p>
+          <p class="text-lg spacing tracking-wider">Avis Formation</p>
+          <p class="text-muted-foreground text-sm">
+            Prendre rendez-vous pour passer 15 minutes avec moi durant
+            lesquelles je récolterai ton avis sur mes formations et on pourra
+            partager sur ce que tu as fais etc...
+          </p>
+          <div class="flex flex-col gap-2 mt-6">
+            <div class="flex items-center gap-2 py-1 px-2 -mx-2">
+              <i data-lucide="clock" class="size-4 text-muted-foreground"></i>
+              <p class="text-sm text-muted-foreground">15m</p>
+            </div>
+            <div class="flex items-center gap-2 py-1 px-2 -mx-2">
+              <img
+                src="/google-meet.svg"
+                class="size-4 text-muted-foreground"
+              />
+              <p class="text-sm text-muted-foreground">Google Meet</p>
+            </div>
+            <div
+              class="flex items-center gap-2 py-1 px-2 -mx-2 cursor-pointer hover:bg-accent transition rounded-md w-fit"
+            >
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+              <p class="text-sm text-muted-foreground">Europe/Paris</p>
+              <i
+                data-lucide="chevron-down"
+                class="size-4 text-muted-foreground"
+              ></i>
+            </div>
+          </div>
+        </header>
+        <!-- Calendar -->
+        <div
+          class="p-6 flex flex-col flex-1 gap-2 md:border-l border-accent md:basis-[480px] md:max-w-[480px]"
+        >
+          <div class="flex items-center gap-4">
+            <p class="mr-auto">
+              September <span class="text-stone-400">2024</span>
+            </p>
+            <button
+              class="size-8 flex items-center justify-center hover:bg-accent transition rounded-md"
+            >
+              <i
+                data-lucide="chevron-left"
+                class="size-4 text-muted-foreground"
+              ></i>
+            </button>
+            <button
+              class="size-8 flex items-center justify-center hover:bg-accent transition rounded-md"
+            >
+              <i
+                data-lucide="chevron-right"
+                class="size-4 text-muted-foreground"
+              ></i>
+            </button>
+          </div>
+          <div
+            class="grid grid-cols-7 gap-0.5 text-sm text-muted-foreground border-y md:border-y-0 border-stone-700 py-4"
+          >
+            <span class="text-center">MON</span>
+            <span class="text-center">TUE</span>
+            <span class="text-center">WED</span>
+            <span class="text-center">THU</span>
+            <span class="text-center">FRI</span>
+            <span class="text-center">SAT</span>
+            <span class="text-center">SUN</span>
+          </div>
+          <div class="grid grid-cols-7 gap-1 text-sm text-muted-foreground">
+            <div class="w-full aspect-square"></div>
+            <div class="w-full aspect-square"></div>
+            <div class="w-full aspect-square"></div>
+            <div class="w-full aspect-square"></div>
+            <div class="w-full aspect-square"></div>
+            <div class="w-full aspect-square"></div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              1
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              2
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              3
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              4
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              5
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              6
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              7
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              8
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              9
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              10
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              11
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              12
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              13
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              14
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              15
+            </div>
+            <div
+              class="w-full text-foreground aspect-square flex flex-col relative items-center justify-center rounded-md bg-accent"
+            >
+              16
+              <div
+                class="absolute bottom-1 flex items-center justify-center left-0 right-0"
+              >
+                <i data-lucide="dot" class="size-4 text-muted-foreground"></i>
+              </div>
+            </div>
+            <div
+              class="w-full bg-white text-black aspect-square flex flex-col items-center justify-center rounded-md"
+            >
+              17
+            </div>
+            <div
+              class="w-full aspect-square flex flex-col items-center justify-center rounded-md bg-accent border border-transparent hover:border-white transition text-foreground"
+            >
+              18
+            </div>
+            <div
+              class="w-full aspect-square flex flex-col items-center justify-center rounded-md bg-accent border border-transparent hover:border-white transition text-foreground"
+            >
+              19
+            </div>
+            <div
+              class="w-full aspect-square flex flex-col items-center justify-center rounded-md bg-accent border border-transparent hover:border-white transition text-foreground"
+            >
+              20
+            </div>
+            <div
+              class="w-full aspect-square flex flex-col items-center justify-center rounded-md bg-accent border border-transparent hover:border-white transition text-foreground"
+            >
+              21
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              22
+            </div>
+            <div
+              class="w-full aspect-square flex flex-col items-center justify-center rounded-md bg-accent border border-transparent hover:border-white transition text-foreground"
+            >
+              23
+            </div>
+            <div
+              class="w-full aspect-square flex flex-col items-center justify-center rounded-md bg-accent border border-transparent hover:border-white transition text-foreground"
+            >
+              24
+            </div>
+            <div
+              class="w-full aspect-square flex flex-col items-center justify-center rounded-md bg-accent border border-transparent hover:border-white transition text-foreground"
+            >
+              25
+            </div>
+            <div
+              class="w-full aspect-square flex flex-col items-center justify-center rounded-md bg-accent border border-transparent hover:border-white transition text-foreground"
+            >
+              26
+            </div>
+            <div
+              class="w-full aspect-square flex flex-col items-center justify-center rounded-md bg-accent border border-transparent hover:border-white transition text-foreground"
+            >
+              27
+            </div>
+            <div
+              class="w-full aspect-square flex flex-col items-center justify-center rounded-md bg-accent border border-transparent hover:border-white transition text-foreground"
+            >
+              28
+            </div>
+            <div
+              class="w-full aspect-square flex items-center justify-center rounded-md"
+            >
+              29
+            </div>
+            <div
+              class="w-full aspect-square flex flex-col items-center justify-center rounded-md bg-accent border border-transparent hover:border-white transition text-foreground"
+            >
+              30
+            </div>
+          </div>
+        </div>
+        <!-- Time slots -->
+        <div
+          class="p-6 flex flex-col md:basis-60 xl:basis-72 gap-2 md:border-l border-accent"
+        >
+          <div class="flex items-center gap-4">
+            <p class="mr-auto">Tue <span class="text-stone-400">17</span></p>
+            <div class="border rounded-md border-stone-700 p-1 bg-background">
+              <button class="px-3 py-0.5 text-sm">12h</button>
+              <button
+                class="px-3 py-0.5 text-sm bg-accent text-foreground rounded-md"
+              >
+                24h
+              </button>
+            </div>
+          </div>
+          <div class="flex overflow-auto flex-col gap-2 text-sm">
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              13:00
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              13:15
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              13:30
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              13:45
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              14:00
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              14:15
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              14:30
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              14:45
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              18:00
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              18:15
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              18:30
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              18:45
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              19:00
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              19:15
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              19:30
+            </button>
+            <button
+              class="border border-accent bg-background w-full py-1.5 rounded-md hover:border-white transition"
+            >
+              19:45
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="text-xl mt-4">Cal.com</p>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
