@@ -30,10 +30,12 @@
       class="h-screen flex-col w-full flex md:items-center md:justify-center bg-background"
     >
       <div
-        class="bg-card mx-auto w-full text-white flex flex-col md:flex-row md:rounded-lg md:border md:border-accent md:h-[520px] md:max-w-[960px] xl:max-w-[1056px] md:w-fit"
+        class="bg-card mx-auto md:overflow-hidden w-full text-white flex flex-col md:flex-row md:rounded-lg md:border md:border-accent md:h-[520px] md:max-w-[960px] xl:max-w-[1056px] md:w-fit"
       >
         <!-- Header -->
-        <header class="bg-card p-6 flex flex-col gap-2 md:basis-60 xl:basis-72">
+        <header
+          class="bg-card p-6 flex flex-col gap-2 md:shrink-0 md:basis-60 xl:basis-72"
+        >
           <img
             src="https://melvynx.com/images/my-face.png"
             alt="my face"
@@ -272,7 +274,7 @@
         </div>
         <!-- Time slots -->
         <div
-          class="p-6 flex flex-col md:basis-60 xl:basis-72 gap-2 md:border-l border-accent"
+          class="p-6 flex flex-col md:basis-60 md:shrink-0 xl:basis-72 gap-2 md:border-l border-accent"
         >
           <div class="flex items-center gap-4">
             <p class="mr-auto">Tue <span class="text-stone-400">17</span></p>
